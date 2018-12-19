@@ -4,7 +4,7 @@ Run from a terminal console
 ```
 git clone https://github.com/olafurpg/scalafix-sbt-example
 cd scalafix-sbt-example
-sbt "scalafix RemoveUnusedImports"
+sbt "scalafix RemoveUnused"
 git diff
 ```
 
