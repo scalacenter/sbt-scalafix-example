@@ -1,8 +1,8 @@
 lazy val myproject = project.settings(
   scalaVersion := "2.12.6",
-  addCompilerPlugin(scalafixSemanticdb),
+  semanticdbEnabled := true,
+  semanticdbVersion := scalafixSemanticdb.revision,
   scalacOptions ++= List(
-    "-Yrangepos",
     "-Ywarn-unused-import"
   )
 )
