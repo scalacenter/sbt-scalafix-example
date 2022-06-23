@@ -1,8 +1,9 @@
 lazy val myproject = project.settings(
-  scalaVersion := "2.13.6",
+  scalaVersion := "2.12.11",
   semanticdbEnabled := true,
-  semanticdbVersion := scalafixSemanticdb.revision,
-  scalacOptions ++= List(
-    "-Wunused"
-  )
+  semanticdbVersion := scalafixSemanticdb.revision
+  // with -Wunused compilation fails
+//  scalacOptions ++= List(
+//    "-Wunused"
+//  )
 )
