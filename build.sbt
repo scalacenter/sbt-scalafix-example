@@ -1,8 +1,7 @@
 lazy val myproject = project.settings(
-  scalaVersion := "2.13.15",
+  scalaVersion := "3.3.4",
   semanticdbEnabled := true,
-  semanticdbVersion := scalafixSemanticdb.revision,
   scalacOptions ++= List(
-    "-Wunused"
+    "-Wunused:all"
   )
 )
