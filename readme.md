@@ -2,7 +2,7 @@
 
 Run from a terminal console
 ```
-git clone https://github.com/olafurpg/scalafix-sbt-example
+git clone https://github.com/scalacenter/scalafix-sbt-example
 cd scalafix-sbt-example
 sbt "scalafix RemoveUnused"
 git diff
